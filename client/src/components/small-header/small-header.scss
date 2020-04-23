@@ -1,0 +1,22 @@
+.small-header {
+  background: #3A80BA;
+  height: 74px;
+
+    .wrapper {
+    padding: 0 130px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .small-header {
+    .wrapper {
+      padding: 0 15px;
+    }
+  }
+}

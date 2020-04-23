@@ -1,0 +1,40 @@
+.advantages {
+  text-align: center;
+  padding: 0 130px;
+
+  * {
+    color: #1A1A1A;
+  }
+
+  .title {
+    max-width: 580px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+  }
+    
+  .description {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 142%;
+    color: #7E7E7E;
+    margin-bottom: 40px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 20px;
+    justify-items: center;
+  }
+
+}
+
+@media (max-width: 875px) {
+  .advantages {
+    padding: 0 5px;
+  }
+}

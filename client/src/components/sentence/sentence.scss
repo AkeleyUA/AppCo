@@ -1,0 +1,60 @@
+.sentence {
+  min-height: 1005px;
+  background: url('../../img/sentence-bg.png') center right no-repeat;
+  padding: 0 130px;
+
+  .title {
+    max-width: 580px;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #1A1A1A;
+    margin: 80px auto 24px auto;
+
+    .extra-text {
+      font-weight: bold;
+    }
+  }
+  .description {
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #7E7E7E;
+    margin: 0 auto 32px auto;
+    max-width: 664px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 380px));
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .contact-us {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 142%;
+    color: #7E7E7E;
+
+    .link {
+      color: #3A80BA;
+      font-weight: bold;
+      text-decoration: none;
+  
+      &:hover {
+        color: darken(#3A80BA, 20%)
+      }
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .sentence {
+    padding: 0 30px;
+  }
+}

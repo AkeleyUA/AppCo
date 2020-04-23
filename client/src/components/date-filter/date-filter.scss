@@ -1,0 +1,32 @@
+.filter-container {
+  margin-top: 24px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .filter-btn {
+    background: #3A80BA;
+    border-radius: 8px;
+    width: 110px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .startDate, .endDate {
+    font-size: 16px;
+    line-height: 142%;
+  }
+}
+
+@media (max-width: 875px) {
+  .filter-container {
+    min-height: 120px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }  
+}
+

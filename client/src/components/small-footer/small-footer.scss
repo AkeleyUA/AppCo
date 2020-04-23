@@ -1,0 +1,30 @@
+.small-footer {
+  background: #1C3B55;
+  .container {
+    padding: 17px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+
+@media (max-width: 875px) {
+  .small-footer {
+    .container {
+      padding: 0 15px;
+      font-size: 6px;
+    }
+
+    .logo {
+      font-size: 20px;
+    }
+  }
+}

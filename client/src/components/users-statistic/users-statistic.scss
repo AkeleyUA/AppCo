@@ -1,0 +1,113 @@
+.users-statistic {
+  padding: 0 130px;
+
+  .users-statistic-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1A1A1A;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+
+  .table {
+    width: 100%;
+    border-radius: 13px;
+    overflow: hidden;
+
+    .table-row {
+      background: #3A80BA;
+      width: 100%;
+      height:48px;
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr 5fr 2fr 3fr 2fr 3fr;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      text-align: center;
+      div {
+        width: 100%;
+        height: 100%;
+        line-height: 3.2;
+        border-right: 1px solid #FFFFFF;
+      }
+    }
+    a {
+      text-decoration: none;
+      height: 32px;
+      text-align: center;
+      .table-row {
+        font-size: 16px;
+        line-height: 20px;
+        color: #1A1A1A;
+      }
+
+      &:nth-last-child(odd) > .table-row {
+        background: #FBFBFB;
+      }
+
+      &:nth-last-child(even) > .table-row {
+        background: #F1F1F1;
+      }
+    }
+  }
+  .btn-wrapper {
+    max-width: 360px;
+    display: flex;
+    margin: 24px auto;
+    justify-content: space-between;
+    align-items: center;
+
+    .page-btn {
+      width: 48px;
+      height: 48px;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      border: 2px solid #F1F1F1;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background: transparent;
+      
+      &:hover {
+        background-color: lighten(#3A80BA, 40%);
+      }
+    }
+    .active {
+      background: #3A80BA!important;
+      color: #FFFFFF;
+    }
+  
+    .nav-page-btn {
+      width: 24px;
+      height: 24px;
+      border-top: 3px solid #F1F1F1;
+      border-left: 3px solid #F1F1F1;
+      background: transparent;
+      &:disabled {
+        border-color: darken(#FFFFFF, 20%);
+      }
+    }
+    .next {
+      transform: rotate(135deg);
+      border-color: #3A80BA;
+    }
+    .prev {
+      transform: rotate(-45deg);
+      border-color: #3A80BA;
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .users-statistic {
+    padding: 15px;
+
+    .table .table-row {
+      grid-template-columns: 1fr 2fr 1fr 1fr;
+    }
+  } 
+}

@@ -1,0 +1,32 @@
+.current-user-main {
+  padding: 0 130px;
+
+  .name-and-filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-name {
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1A1A1A;
+  }
+  .chart-title {
+    margin: 24px 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1A1A1A;
+  }
+}
+
+@media (max-width: 875px) {
+  .current-user-main {
+    padding: 0 15px;
+  }
+  .name-and-filter-wrapper {
+    flex-direction: column;
+  }
+}

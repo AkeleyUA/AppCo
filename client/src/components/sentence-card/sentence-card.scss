@@ -1,0 +1,62 @@
+.sentence-card {
+  max-width: 380px;
+  height: 627px;
+  border: 2px solid #F1F1F1;
+  box-sizing: border-box;
+  border-radius: 32px;
+  text-align: center;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+
+  .card-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 32px;
+  }
+
+  img {
+    margin-bottom: 16px;
+    margin-top: 19px;
+  }
+
+  .card-price {
+    width: 100%;
+    display: block;
+    font-size: 48px;
+    line-height: 59px;
+    color: #1A1A1A;
+    margin-bottom: 24px;
+  }
+
+  .card-line {
+    margin: 0 65px;
+    height: 1px;
+    background: linear-gradient(90deg, #FFFFFF, #c7c7c7, #FFFFFF);
+  }
+
+  .card-description {
+    width: 222px;
+    height: 182px;
+    margin: 24px auto;
+    font-size: 16px;
+    line-height: 162%;
+    color: #7E7E7E;
+  }
+  .card-btn {
+    width: 220px;
+    height: 56px;
+    background: #3A80BA;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  &:hover {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    .card-price {
+      color: #3A80BA;
+    }
+  }
+}
